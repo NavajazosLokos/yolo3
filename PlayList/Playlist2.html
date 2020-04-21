@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Playlist</title>
+<style>
+	
+	 #play{
+     display:flex;
+     justify-content:space-around;
+		 
+		 
+   }
+	.mejs-container .mejs-controls { background: #932 !important; }
+	
+body{
+background-image: url("waifu_collage_by_webkinzannie123_d8vnw84-fullview2.jpg");
+}
+
+#player{
+  width: 100%;
+}
+
+
+#playlist, audio{
+  width:100%;
+  padding:20px;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration:none;
+}
+.active a {
+  color:#3FDBFC;
+  text-decoration:none;
+}
+li a{
+background-color:;
+color:#FFFFFF;
+padding:10px 12px;
+display:block;
+  
+}
+
+a{
+  border:solid 0.5px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+
+
+li a:hover{
+  text-decoration:none;
+}
+
+	.audio{
+		width: 50%;
+	}
+	
+	.image{
+		border-radius:48%;
+-webkit-border-radius:48%;
+box-shadow: 0px 0px 15px 15px;
+-webkit-box-shadow: 0px 0px 15px 15px;
+	}
+	
+	.image{
+		animation-duration: 90s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+	}
+		
+		@keyframes slidein {
+  from {
+    margin-left: 10%;
+    width: 350px
+  }
+
+  to {
+    margin-left: 0%;
+    width: 350px;
+  }
+}
+	@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+}
+	
+</style>
+</head>
+
+<body>
+	<br><br><br><br><br><br><br>
+	<section id="play">
+  <div id="imagen"><img class="image" width=300px height=300px src="images.jpg">
+  
+  
+  
+  </div>
+  <div class="audio">
+  
+  
+  
+<audio id="audio" preload="auto" tabindex="0" controls=""  >
+  <source src="Hora de Aventura/Adventure Time   Island Song With Lyrics.mp3">
+</audio>
+
+<ul id="playlist">
+        <li class="active">
+           <a href="Hora de Aventura/Adventure Time   Island Song With Lyrics.mp3">
+             Island Song
+           </a>
+        </li>
+        <li>
+            <a href="Hora de Aventura/Rebecca Sugar   Time Adventure (Sub Esp)[2].mp3">
+              Time Adventure
+            </a>
+        </li>
+        <li>
+            <a href="Hora de Aventura/♫ Learn How To Make Bacon Pancakes  ♫.mp3">
+               Learn How To Make Bacon Pancakes
+            </a>
+        </li>
+        <li>
+            <a href="Jojos/jojos-bizarre-adventure-op4-full-sono-chi-no-kioku-end-of-the-world-cover-espanol.mp3">
+                End Of The World
+            </a>
+        </li>
+        <li>
+            <a href="Jojos/jojos-bizarre-adventure-opening-5-full-crazy-noisy-bizarre-town.mp3">
+              Crazy Noisy Bizarre
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/01 - Kodou.mp3">
+                Koduo
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/02 - Seijaku no Kanata.mp3">
+               Seijaku no Kanata
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/03 - Konshin no Yuuki.mp3">
+               Konshin no Yuuki
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/04 - Yuujou.mp3">
+               Yuujou
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/05 - Shisen Kara no Kikan.mp3">
+               Shisen Kara no Kikan
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/06 - Fushigi na Houmonsha.mp3">
+               Fushigi na Houmonsha
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/07 - Shissou.mp3">
+              Shissou
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/08 - Sendou Dukai.mp3">
+               Sendou Dukai
+            </a>
+        </li>
+	
+    </ul>
+    </div>
+  </section>
+	
+<script src="js/Play.js"></script>
+</body>
+</html>
