@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Playlist</title>
+<style>
+		#text{
+			color: aliceblue;
+			text-shadow: 0 0 0.2em #B106DF;
+			font-size: 30px;
+		
+		}
+	
+	 #play{
+     display:flex;
+     justify-content:space-around;
+		 
+		 
+   }
+	.mejs-container .mejs-controls { background: #932 !important; }
+	
+body{
+background-image: url("waifu_collage_by_webkinzannie123_d8vnw84-fullview2.jpg");
+}
+
+#player{
+  width: 100%;
+}
+
+
+#playlist, audio{
+  width:100%;
+  padding:20px;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration:none;
+}
+.active a {
+  color:#3FDBFC;
+  text-decoration:none;
+}
+li a{
+background-color:;
+color:#FFFFFF;
+padding:10px 12px;
+display:block;
+  
+}
+
+a{
+  border:solid 0.5px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+
+
+li a:hover{
+  text-decoration:none;
+}
+
+	.audio{
+		width: 50%;
+	}
+	
+	.image{
+		border-radius:48%;
+-webkit-border-radius:48%;
+box-shadow: 0px 0px 15px 15px;
+-webkit-box-shadow: 0px 0px 15px 15px;
+	}
+	
+	.image{
+		animation-duration: 90s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+	}
+		
+		@keyframes slidein {
+  from {
+    margin-left: 10%;
+    width: 350px
+  }
+
+  to {
+    margin-left: 0%;
+    width: 350px;
+  }
+}
+	
+</style>
+</head>
+
+<body>
+	<br><br><br><br><br><br><br>
+	<section id="play">
+  <div id="imagen"><img class="image" width=300px height=300px src="31aeceeefa29bff884d3f49fcd3b4697.jpg">
+  
+  
+  
+  </div>
+  <div class="audio">
+  
+  
+  
+<audio id="audio" preload="auto" tabindex="0" controls=""  >
+  <source src="Jojos/04 REMEMBER.mp3">
+</audio>
+
+<ul id="playlist">
+        <li class="active">
+           <a href="Jojos/04 REMEMBER.mp3">
+            Remember
+           </a>
+        </li>
+        <li>
+            <a href="Jojos/19-Man! fell like a woman-¡_.mp3">
+              Man! fell like a woman
+            </a>
+        </li>
+        <li>
+            <a href="Jojos/034 EL ITALIANO - L FERR0.mp3">
+              EL ITALIANO
+            </a>
+        </li>
+        <li>
+            <a href="Jojos/daft punk - harder, better, faster, stronger30.mp3">
+                harder, better, faster, stronger
+            </a>
+        </li>
+        <li>
+            <a href="Jojos/16-The Killer Song...Calorina Marques.mp3">
+              The Killer Song
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/15 - destination calabria (club remix) - alex gaudino featur.mp3">
+                Destination Calabria
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/02 los microfonos.mp3">
+               Microfonos
+            </a>
+        </li>
+	<li>
+            <a href="Jojos/up & down.mp3">
+               Up & Down
+            </a>
+        </li>
+	
+	
+	
+    </ul>
+    </div>
+  </section>
+	
+<script src="js/Play.js"></script>
+	<div><p><a id="text" href="../index.html">Volver</a></div>
+</body>
+</html>
